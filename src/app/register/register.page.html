@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <!-- <img alt="logo" id="header_logo" height="40" float-left src="assets/images/logo.png" /> -->
+      <h5 class="header">
+      United Bank of India
+      </h5>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="img-div">
+      <img alt="logo" id="header_logo" height="40" float-left src="assets/images/logo.png" />
+    </div>
+  <form class="register-form">
+    <ion-item color="form-field">
+      <ion-input placeholder="Emp Code" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item color="form-field">
+      <ion-input placeholder="Email" type="email" required></ion-input>
+    </ion-item>
+
+    <ion-item color="form-field">
+      <ion-input placeholder="Pin" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item color="form-field">
+      <ion-input placeholder="Repin" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" class="submit-btn" expand="block" >Submit</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

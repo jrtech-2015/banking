@@ -1,1 +1,9 @@
-
+ion-tab-button {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+ion-tab-button[tab=register] {
+    border-right: 1px solid #ffffff;
+    height: 30px;
+}

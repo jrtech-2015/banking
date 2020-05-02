@@ -83,7 +83,7 @@
    */
 
   body {
-    --ion-color-primary: #428cff;
+    --ion-color-primary: #178d50;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
@@ -153,8 +153,8 @@
    */
 
   .ios body {
-    --ion-background-color: #000000;
-    --ion-background-color-rgb: 0,0,0;
+    --ion-background-color: #c9e5a8;
+    --ion-background-color-rgb: 201,229,168;
 
     --ion-text-color: #ffffff;
     --ion-text-color-rgb: 255,255,255;
@@ -181,7 +181,7 @@
 
     --ion-toolbar-background: #0d0d0d;
 
-    --ion-item-background: #000000;
+    --ion-item-background:white;
   }
 
 
@@ -191,7 +191,7 @@
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #c9e5a8;
     --ion-background-color-rgb: 18,18,18;
 
     --ion-text-color: #ffffff;
@@ -221,12 +221,15 @@
 
     --ion-item-background: #1e1e1e;
 
-    --ion-toolbar-background: #1f1f1f;
+    --ion-toolbar-background: #178d50;
 
-    --ion-tab-bar-background: #1f1f1f;
+    --ion-tab-bar-background: #178d50;
   }
 
   ion-title.title-large {
     --color: white;
   }
 }
+$colors: (
+ form-field: #ffffff
+);

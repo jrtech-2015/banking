@@ -35,3 +35,12 @@ form {
 :host .login-form .item-native {
   border: 0px;
 }
+ion-content {
+  --background: #c9e5a8 !important;
+}
+ion-toolbar {
+  --background: #178d50 !important;
+  h5 {
+    color: #fff;
+  }
+}

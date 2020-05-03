@@ -7,3 +7,8 @@ ion-tab-button[tab=register] {
     border-right: 1px solid #ffffff;
     height: 30px;
 }
+ion-tabs {
+    ion-tab-bar {
+        --background: #178d50 !important;
+    }
+}

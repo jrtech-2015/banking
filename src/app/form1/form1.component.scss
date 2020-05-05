@@ -1,0 +1,41 @@
+ion-content ion-toolbar {
+    --background: translucent;
+  }
+  ion-title {
+    text-align: center;
+  }
+  h5 {
+    margin: 0px;
+  }
+  img {
+    width: 22%;
+    height: 22%;
+    margin-top: 10px;
+  }
+  ion-col {
+    text-align: center;
+  }
+  .img-div {
+    text-align: center;
+  }
+  .register-form {
+    width: 90%;
+    margin: 0 auto;
+    ion-item {
+        background-color: #fff !important;
+        color: #000;
+        margin-top: 5px;
+    }
+  }
+  ion-content {
+    --background: #faeced !important;
+  }
+  ion-toolbar {
+    --background: #eb4497 !important;
+    h5 {
+      color: #fff;
+    }
+  }
+  ion-button {
+    --background: #eb4497 !important;
+  }

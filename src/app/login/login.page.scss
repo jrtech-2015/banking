@@ -7,7 +7,7 @@ ion-title {
 ion-card {
   background-color: transparent;
   text-align: center;
-  color: #178d50;
+  color: #8c0718;
   box-shadow: 0px 0px 0px 0px transparent;
 }
 .img-div {
@@ -36,11 +36,14 @@ form {
   border: 0px;
 }
 ion-content {
-  --background: #c9e5a8 !important;
+  --background: #faeced !important;
 }
 ion-toolbar {
-  --background: #178d50 !important;
+  --background: #eb4497 !important;
   h5 {
     color: #fff;
   }
+}
+ion-button {
+  --background: #eb4497 !important;
 }

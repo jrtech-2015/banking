@@ -18,6 +18,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'form1',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../form1/form1.module').then(m => m.Form1Module)
+          }
+        ]
+      },
+      {
         path: 'register',
         children: [
           {
@@ -37,6 +47,11 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: '/user/login',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
+    redirectTo: '/user/form1',
     pathMatch: 'full'
   }
 ];

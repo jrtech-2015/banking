@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <!-- <img alt="logo" id="header_logo" height="40" float-left src="assets/images/logo.png" /> -->
+      <h5 class="header">
+    JR Attendance App
+      </h5>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Employee Details</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list>
+      <ion-item lines="none">
+        <ion-label>Employee Name</ion-label>
+        <ion-note style="font-size: 15px;" slot="end">Vijay</ion-note>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label>Employee Code</ion-label>
+        <ion-note style="font-size: 15px;" slot="end">1100</ion-note>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label>Employee Branch</ion-label>
+        <ion-note style="font-size: 15px;" slot="end">Chennai</ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-content>
+  <ion-button shape="round" fill="outline">Check-In</ion-button>
+  <ion-button shape="round" fill="outline">Check-Out</ion-button>
+</ion-content>

@@ -28,6 +28,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'emp-details',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../employee-home/employee.module').then(m => m.EmployeeHomeModule)
+          }
+        ]
+      },
+      {
         path: 'register',
         children: [
           {

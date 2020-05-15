@@ -32,8 +32,10 @@
 
     <ion-row>
       <ion-col>
-        <ion-button type="submit" class="submit-btn" expand="block" [routerLink]="['/user/emp-details']" >Submit</ion-button>
+        <ion-button type="submit" class="submit-btn" expand="block" >Submit</ion-button>
+        <!-- routerLink="/user/form1" routerDirection="forward" href="/Form1" -->
       </ion-col>
     </ion-row>
+    <div class="backToLogin" routerLink="/user/login">Back to Login</div>
   </form>
 </ion-content>

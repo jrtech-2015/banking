@@ -5,6 +5,7 @@
       <h5 class="header">
     JR Attendance App
       </h5>
+      <ion-icon name="power" (click)="logout()"  title="Logout"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,20 +15,25 @@
   </ion-card-header>
 
   <ion-card-content>
-    <ion-list>
+    <ion-list *ngFor="let empDetails of employeeDetails">
       <ion-item lines="none">
         <ion-label>Employee Name</ion-label>
-        <ion-note style="font-size: 15px;" slot="end">Vijay</ion-note>
+        <ion-note style="font-size: 15px;" slot="end">{{empDetails.emp_name}}</ion-note>
       </ion-item>
 
       <ion-item lines="none">
         <ion-label>Employee Code</ion-label>
-        <ion-note style="font-size: 15px;" slot="end">1100</ion-note>
+        <ion-note style="font-size: 15px;" slot="end">{{empDetails.emp_code}}</ion-note>
       </ion-item>
 
       <ion-item lines="none">
         <ion-label>Employee Branch</ion-label>
-        <ion-note style="font-size: 15px;" slot="end">Chennai</ion-note>
+        <ion-note style="font-size: 15px;" slot="end">{{empDetails.emp_branch}}</ion-note>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label>Employee Mail Id</ion-label>
+        <ion-note style="font-size: 15px;" slot="end">{{empDetails.email_id}}</ion-note>
       </ion-item>
     </ion-list>
   </ion-card-content>

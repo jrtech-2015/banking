@@ -2,9 +2,21 @@ ion-toolbar {
     --background: #eb4497 !important;
     h5 {
       color: #fff;
+      margin: 0px;
     }
   }
   ion-button {
     --background: #eb4497 !important;
     color: #fff;
+  }
+  ion-content {
+    text-align: center;
+  }
+  ion-title {
+    position: relative;
+  }
+  ion-icon {
+    position: absolute;
+    top: 0px;
+    right: 20px;
   }

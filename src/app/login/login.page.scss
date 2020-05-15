@@ -47,3 +47,9 @@ ion-toolbar {
 ion-button {
   --background: #eb4497 !important;
 }
+ion-item {
+  margin-bottom: 10px;
+  .item-native {
+    --border: 0px !important;
+  }
+}

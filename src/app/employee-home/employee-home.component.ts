@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-home',
@@ -6,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employee-home.component.scss'],
 })
 export class EmployeeHomeComponent implements OnInit {
-
-  constructor() { }
+public employeeDetails: any;
+  constructor(public router: Router) { 
+    this.employeeDetails = JSON.parse(localStorage.getItem('userDetails'));
+  }
 
   ngOnInit() {}
-
+  logout() {
+    localStorage.clear();
+    this.router.navigate(['/user/login']);
+  }
 }

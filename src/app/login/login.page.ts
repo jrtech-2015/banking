@@ -100,11 +100,11 @@ public isValidCode: boolean = false;
     }
     else {
       if(formData.controls.empCode.value == "") {
-        this.loginForm.controls.empCode.setErrors({'required': true});
+        this.loginForm.controls.empCode.markAsTouched();
       }
       else {
-        this.loginForm.controls.MPin.setErrors({'required': true});
+        this.loginForm.controls.MPin.markAsTouched();
       }
     }
-}
+  }
 }

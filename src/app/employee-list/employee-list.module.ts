@@ -3,9 +3,9 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { EmployeeHomeComponent } from './employee-home.component';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployeeListComponent } from './employee-list.component';
 
 @NgModule({
   imports: [
@@ -13,9 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    RouterModule.forChild([{ path: '', component: EmployeeHomeComponent }])
+    RouterModule.forChild([{ path: '', component: EmployeeListComponent }])
   ],
-  declarations: [EmployeeHomeComponent],
+  declarations: [EmployeeListComponent],
   providers: [HttpClientModule]
 })
-export class EmployeeHomeModule {}
+export class EmployeeListModule {}

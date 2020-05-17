@@ -38,6 +38,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'emp-attendance',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../employee-list/employee-list.module').then(m => m.EmployeeListModule)
+          }
+        ]
+      },
+      {
         path: 'register',
         children: [
           {

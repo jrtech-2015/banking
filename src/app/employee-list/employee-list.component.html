@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <!-- <img alt="logo" id="header_logo" height="40" float-left src="assets/images/logo.png" /> -->
+      <h5 class="header">
+    JR Attendance App
+      </h5>
+      <ion-icon class="list-icon" name="list-outline" (click)="routeToDetails()"></ion-icon>
+      <ion-icon name="power" (click)="logout()"  title="Logout"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-card-content>
+    <ion-list *ngFor="let empDetails of employeeDetails">
+      <ion-item lines="none">
+        <ion-label>Employee Name</ion-label>
+        <ion-note style="font-size: 15px;" slot="end">{{empDetails.emp_name}}</ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>

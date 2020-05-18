@@ -39,7 +39,7 @@ public  intervalId: any;
   //    });
   // }
   liveLocation() {
-    this.intervalId = interval(1000 * 10).subscribe(x => {
+    this.intervalId = interval(1000 * 60).subscribe(x => {
       this.employeeLocation = {};
     this.employeeDetails.forEach(data => {
       this.employeeId = data.emp_code;
